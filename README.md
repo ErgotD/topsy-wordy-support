@@ -10,6 +10,7 @@ Public-facing static site for the Topsy Wordy iPhone app. Hosts the landing page
 - `terms.html` - Terms of Use. Must stay in sync with the app's bundled `assets/legal/terms.md`, with the same deliberate contact-sentence exception.
 - `acknowledgements.html` - the ESDB attribution notice, mirroring the app's bundled `assets/legal/acknowledgements.md`.
 - `styles.css` - single stylesheet using the app's brand tokens. Light and dark mode via `prefers-color-scheme`.
+- `images/` - in-page app screenshots copied from the app repo's marketing captures.
 - `fonts/` - self-hosted Newsreader and Inter, both under the SIL Open Font License 1.1 (`fonts/OFL.txt`).
 - `favicon.svg` - a small persimmon square echoing the app's tile mark.
 - No JavaScript, no third-party requests, no fonts loaded from a CDN, no analytics.

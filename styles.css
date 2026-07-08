@@ -200,6 +200,34 @@ hr {
   color: var(--ink);
 }
 
+.app-shots {
+  margin: 48px 0;
+}
+
+.shots-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.shots-row img {
+  width: calc(50% - 8px);
+  max-width: 260px;
+  height: auto;
+  border-radius: 28px;
+  border: 1px solid rgba(28, 26, 23, 0.18);
+  background: var(--paper);
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .shots-row img {
+    border-color: rgba(237, 232, 221, 0.22);
+  }
+}
+
 .meta {
   color: var(--ink-secondary);
   font-size: 0.95rem;
@@ -258,6 +286,16 @@ footer a:hover {
 @media (max-width: 480px) {
   .container {
     padding: 24px 20px 80px;
+  }
+
+  .shots-row {
+    gap: 10px;
+  }
+
+  .shots-row img {
+    width: calc(50% - 5px);
+    max-width: none;
+    border-radius: 20px;
   }
 
   h1 {
