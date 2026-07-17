@@ -193,6 +193,26 @@ hr {
   margin: 48px 0;
 }
 
+/* Official Apple "Download on the App Store" badge. Apple's marketing
+   guidelines require the unmodified artwork with clear space around it;
+   the block margins provide that breathing room. Sized by height so the
+   badge keeps its intrinsic proportions; 48px sits comfortably above
+   Apple's minimum without shouting on the calm page. */
+.app-store-badge {
+  margin: 32px 0;
+}
+
+.app-store-badge a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.app-store-badge img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 .lead {
   font-size: 1.15rem;
   line-height: 1.5;
