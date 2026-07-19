@@ -6,10 +6,12 @@
 <title>Topsy Wordy</title>
 <meta name="description" content="Topsy Wordy is a six-letter word puzzle for iPhone. Find the word, then build it backwards. Offline, no account, no tracking.">
 <meta name="theme-color" content="#F6F1E7">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="topsy">
 <div class="container">
 
 <nav>
@@ -20,37 +22,35 @@
 <a href="acknowledgements.html">Acknowledgements</a>
 </nav>
 
-<h1>A six-letter word puzzle.</h1>
-
-<p class="lead">Topsy Wordy is a word puzzle for iPhone. Each puzzle gives you six letters. Find the word they make, then build it backwards.</p>
-
-<p>The first 50 puzzles are free. A one-time purchase unlocks the full collection of 1,000 puzzles. The app has no account, subscription, advertising, or tracking.</p>
-
-<p>The app works fully offline. The puzzle library is bundled in the app.</p>
-
-<p class="app-store-badge">
-<a href="https://apps.apple.com/app/id6786423480" aria-label="Download Topsy Wordy on the App Store"><img src="images/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
-</p>
-
-<figure class="app-shots">
-  <div class="shots-row">
-    <img src="images/topsywordy-puzzle.png"
-         alt="Topsy Wordy puzzle screen showing a column of letters and empty answer slots."
-         loading="lazy">
-    <img src="images/topsywordy-solved.png"
-         alt="Topsy Wordy solved screen showing the completed word and six earned stars."
-         loading="lazy">
+<main class="product-hero">
+  <div class="suite-strip" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
   </div>
-</figure>
+  <section class="product-copy" aria-labelledby="product-title">
+    <p class="eyebrow">Considered Ideas app</p>
+    <h1 id="product-title">A six-letter word puzzle.</h1>
+    <p class="lead">Topsy Wordy is a word puzzle for iPhone. Each puzzle gives you six letters. Find the word they make, then build it backwards.</p>
+      <p>The first 50 puzzles are free. A one-time purchase unlocks the full collection of 1,000 puzzles. The app has no account, subscription, advertising, or tracking.</p>
+      <p>The app works fully offline. The puzzle library is bundled in the app.</p>
+    <div class="product-actions">
+      <a class="app-store-badge" href="https://apps.apple.com/app/id6786423480" aria-label="Download Topsy Wordy on the App Store"><img src="images/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
+      <a class="support-link" href="support.html">FAQ and support</a>
+    </div>
+    <ul class="product-notes">
+      <li>Six letters.</li>
+      <li>Build backwards.</li>
+      <li>Full collection unlock.</li>
+    </ul>
+  </section>
+  <figure class="product-media">
+      <img src="images/topsywordy-puzzle.png" alt="Topsy Wordy puzzle screen showing a column of letters and empty answer slots." loading="lazy">
+      <img src="images/topsywordy-solved.png" alt="Topsy Wordy solved screen showing the completed word and six earned stars." loading="lazy">
+  </figure>
+</main>
 
-<hr>
-
-<p><a href="support.html">FAQ and support</a><br>
-<a href="privacy.html">Read the Privacy Notice</a><br>
-<a href="terms.html">Read the Terms of Use</a><br>
-<a href="acknowledgements.html">Acknowledgements</a></p>
-
-<p>&copy; 2026 <a href="https://consideredideas.com" target="_blank" rel="noopener">Considered Ideas Ltd</a>. All rights reserved.</p>
+<footer class="home-footer">
+<p>&copy; 2026 <a href="https://consideredideas.com" target="_blank" rel="noopener">Considered Ideas Ltd</a>. All rights reserved. <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="acknowledgements.html">Acknowledgements</a></p>
+</footer>
 
 </div>
 </body>
